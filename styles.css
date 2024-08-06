@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ubuntu-mono-regular {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-mono-bold {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-mono-regular-italic {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-mono-bold-italic {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+html, body {
+    height: 100%;
+}
+  
+
+body {
+    background-color: #474d52;
+    font-family: "Ubuntu Mono", monospace;
+    color: #FAF9F6;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    padding: 20px;
+    color: #FAF9F6;
+    font-size: 50px;
+}
+
+nav {
+    display: flex;
+    background-color: #2f3337;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    position: relative;
+    padding: 0 20px;
+}
+
+nav ul li::before {
+    content: "";
+    color: #FAF9F6;
+    font-size: 20px;
+}
+
+nav ul li::after {
+    content: "";
+    color: #FAF9F6;
+    font-size: 20px;
+
+}
+
+nav ul li:hover::before {
+    content: " < "
+}
+
+nav ul li:hover::after {
+    content: " > ";
+    opacity: 1; 
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #FAF9F6;
+    font-size: 20px;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #2f3337;
+    color: #FAF9F6;
+    text-align: center;
+    padding: 1em;
+}
+
+footer p {
+    padding: 5px;
+}
