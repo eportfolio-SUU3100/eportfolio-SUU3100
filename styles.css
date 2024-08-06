@@ -117,3 +117,8 @@ footer {
 footer p {
     padding: 5px;
 }
+
+footer img {
+    height: 35px;
+    padding: 5px;
+}
